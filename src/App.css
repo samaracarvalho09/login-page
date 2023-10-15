@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+}
+
+:root {
+  --gray-100: #ccc;
+  --gray-200: #bbbbbb;
+  --gray-300: #969595;
+  --gray-400: #333;
+  --gray-500: #2d2c36;
+  --gray-800: #121214;
+  --gray-700: #1b1b22;
+
+  --golden-brown: #c29c5f;
+  --golden-orange: #f4ab34;
+  --golden-orange-active: #d8b068;
+
+  --black-opacity-14: rgba(0, 0, 0, 0.14); 
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--gray-800);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: max-content;
+  height: auto;
+  padding: 50px;
+
+  background: #1b1b22;
+  color: var(--gray-100);
+  border-radius: 8px;
+}
+
+.input {
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 38px;
+  margin-top: 4px;
+  border: 1px solid var(--gray-500);
+  border-radius: 4px;
+  height: 56px;
+  width: 300px;
+}
+
+input::placeholder {
+  font-size: 14px;
+}
+
+.userIcon {
+  margin-left: 12px;
+  color: var(--gray-300);
+}
+
+.useIconEye {
+  margin-right: 12px;
+  color: var(--gray-300);
+}
+
+.input label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.input-container input {
+  flex: 1;
+  border: none;
+  margin-inline: 12px;
+
+  background: transparent;
+  color: var(--gray-100);
+}
+
+.inputCheckBox {
+  width: 16px;
+  height: 16px;
+}
+
+.senhaContainer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--gray-100);
+  margin-bottom: 20px;
+}
+
+.checkBoxContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkBoxContainer label {
+  color: var(--gray-100);
+}
+
+.senhaContainer a {
+  color: var(--golden-brown);
+  font-weight: 500;
+}
+
+.senhaContainer a:hover {
+  color: var(--golden-orange);
+}
+
+button {
+  height: 40px;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+
+  color: var(--gray-400);
+  font-weight: 500;
+
+  background-color: var(--golden-orange);
+  border: 1px solid var(--golden-orange);
+  cursor: pointer;
+
+  transition: border-color 0.25s;
+}
+
+button:disabled {
+  border: 1px solid var(--gray-200);
+  cursor: not-allowed;
+  background-color: var(--gray-200);
+  box-shadow: var(--black-opacity-14) 0px 2px 2px;
+}
+
+.buttonPrimeiroAcesso {
+  margin-top: 20px;
+  background-color: white;
+  outline: none;
+}
+
+.buttonPrimeiroAcesso:hover {
+  background-color: var(--golden-orange);
+}
+
+.buttonPrimeiroAcesso:active {
+  background-color: var(--golden-orange-active);
+}

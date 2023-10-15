@@ -9,3 +9,10 @@ Foi utilizado estado para exibir/ocultar senha, conforme o usuário clica no íc
 <p align="center">
   <img alt="newsletter" src=".github/project.png" width="100%">
 </p>
+
+<hr> 
+</br>
+
+<p align="center">
+  <img alt="newsletter" src=".github/project2.png" width="100%">
+</p>
